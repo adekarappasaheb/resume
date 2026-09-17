@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Adikar Appasaheb's professional resume">
+  <title>Adikar Appasaheb — Resume</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #5f6b7a;
+      --accent: #2563eb;
+      --surface: #ffffff;
+      --background: #f4f7fb;
+      --border: #e5eaf1;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--background);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(100% - 2rem, 960px); margin: 0 auto; }
+    header {
+      padding: 4rem 0 3rem;
+      color: white;
+      background: linear-gradient(135deg, #172554, #2563eb);
+    }
+    header h1 { margin: 0; font-size: clamp(2.25rem, 6vw, 4rem); line-height: 1.1; }
+    header p { margin: .75rem 0 0; font-size: 1.2rem; opacity: .9; }
+    .contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin-top: 1.5rem; }
+    .contact a { color: white; opacity: .95; }
+    main { padding: 2rem 0 4rem; }
+    section {
+      margin: 1.25rem 0;
+      padding: 1.75rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(23, 32, 51, .05);
+    }
+    h2 { margin-top: 0; color: #1e3a8a; }
+    h3 { margin-bottom: .25rem; }
+    .meta { color: var(--muted); margin: 0 0 .75rem; }
+    ul { padding-left: 1.25rem; }
+    .skills { display: flex; flex-wrap: wrap; gap: .6rem; padding: 0; list-style: none; }
+    .skills li { padding: .4rem .75rem; color: #1e3a8a; background: #eff6ff; border-radius: 999px; }
+    footer { padding: 1.5rem 0 3rem; color: var(--muted); text-align: center; }
+    @media (max-width: 600px) {
+      header { padding: 3rem 0 2.5rem; }
+      section { padding: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Adikar Appasaheb</h1>
+      <p>Software Developer</p>
+      <div class="contact" aria-label="Contact information">
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/adekarappasaheb" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Profile</h2>
+      <p>
+        Welcome to my resume. I enjoy building reliable, accessible, and user-friendly
+        software. Replace this paragraph with a short summary of your experience,
+        strengths, and career goals.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <article>
+        <h3>Job Title — Company Name</h3>
+        <p class="meta">City, Country · Jan 2024 – Present</p>
+        <ul>
+          <li>Describe a meaningful responsibility or achievement.</li>
+          <li>Include measurable results where possible, such as performance or growth.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <article>
+        <h3><a href="#">Project Name</a></h3>
+        <p>Briefly describe what you built, the technologies used, and the problem it solves.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+        <li>Add your skills</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <h3>Degree or Certification</h3>
+      <p class="meta">Institution Name · Graduation Year</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Adikar Appasaheb</div>
+  </footer>
+</body>
+</html>
