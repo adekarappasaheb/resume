@@ -1,126 +1,90 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Adikar Appasaheb's professional resume">
-  <title>Adikar Appasaheb — Resume</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --ink: #172033;
-      --muted: #5f6b7a;
-      --accent: #2563eb;
-      --surface: #ffffff;
-      --background: #f4f7fb;
-      --border: #e5eaf1;
-    }
-
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.6;
-      color: var(--ink);
-      background: var(--background);
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { width: min(100% - 2rem, 960px); margin: 0 auto; }
-    header {
-      padding: 4rem 0 3rem;
-      color: white;
-      background: linear-gradient(135deg, #172554, #2563eb);
-    }
-    header h1 { margin: 0; font-size: clamp(2.25rem, 6vw, 4rem); line-height: 1.1; }
-    header p { margin: .75rem 0 0; font-size: 1.2rem; opacity: .9; }
-    .contact { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; margin-top: 1.5rem; }
-    .contact a { color: white; opacity: .95; }
-    main { padding: 2rem 0 4rem; }
-    section {
-      margin: 1.25rem 0;
-      padding: 1.75rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(23, 32, 51, .05);
-    }
-    h2 { margin-top: 0; color: #1e3a8a; }
-    h3 { margin-bottom: .25rem; }
-    .meta { color: var(--muted); margin: 0 0 .75rem; }
-    ul { padding-left: 1.25rem; }
-    .skills { display: flex; flex-wrap: wrap; gap: .6rem; padding: 0; list-style: none; }
-    .skills li { padding: .4rem .75rem; color: #1e3a8a; background: #eff6ff; border-radius: 999px; }
-    footer { padding: 1.5rem 0 3rem; color: var(--muted); text-align: center; }
-    @media (max-width: 600px) {
-      header { padding: 3rem 0 2.5rem; }
-      section { padding: 1.25rem; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Resume of Appasaheb Adekar, Engineering Manager and Technical Architecture Leader.">
+<title>Appasaheb Adekar | Engineering Manager & Technical Architecture Leader</title>
+<style>
+:root{--navy:#081523;--blue:#27d3d0;--ink:#d9e8e7;--muted:#8ea6aa;--line:#1d3944;--paper:#0b1b28;--soft:#102a37;--amber:#ffc857;--pink:#ff6b6b}
+*{box-sizing:border-box} body{margin:0;background:#050d14;color:var(--ink);font-family:'Trebuchet MS',Arial,sans-serif;line-height:1.5}
+.resume{position:relative;overflow:hidden;width:min(1100px,calc(100% - 28px));margin:28px auto;background:var(--paper);box-shadow:0 18px 70px rgba(0,0,0,.42)}
+.resume:before{content:'';position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(39,211,208,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(39,211,208,.035) 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(to bottom,black,transparent 75%)}
+header{position:relative;padding:48px 54px 32px;border-top:3px solid var(--blue);border-bottom:1px solid var(--line);background:linear-gradient(125deg,rgba(7,26,40,.96),rgba(11,27,40,.76))}
+h1{margin:0;color:#f4ffff;font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.6rem,6vw,4.6rem);letter-spacing:-.055em;line-height:.96}.headline{margin:13px 0 16px;color:var(--blue);font-size:1rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.signal-line{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;color:var(--amber);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.signal-line span{padding:5px 8px;border:1px solid rgba(255,200,87,.5);border-radius:3px}
+.contact{color:var(--muted);font-size:.91rem}.contact a{color:var(--blue);text-decoration:none}.summary{margin:20px 0 0;max-width:930px;font-size:1.02rem;color:#c7d9d8}
+main{position:relative;padding:12px 54px 42px}.section{padding-top:30px}h2{margin:0 0 15px;padding-bottom:9px;border-bottom:1px solid var(--line);color:var(--blue);font-size:1rem;text-transform:uppercase;letter-spacing:.14em}h2:before{content:'// ';color:var(--amber)}
+h3{margin:0;color:#f4ffff;font-size:1.08rem}.role-head{display:flex;justify-content:space-between;gap:18px;align-items:baseline}.meta{color:var(--amber);font-size:.82rem;white-space:nowrap}.company{margin:2px 0 7px;color:var(--blue);font-weight:700;font-size:.85rem;letter-spacing:.04em}
+ul{margin:7px 0 0;padding-left:20px}li{margin:5px 0}.role{position:relative;margin:0 0 20px;padding:18px 20px 18px 24px;border:1px solid var(--line);border-left:3px solid var(--blue);background:rgba(16,42,55,.58)}.role:after{content:'●';position:absolute;left:-11px;top:18px;color:var(--amber);font-size:12px;text-shadow:0 0 12px var(--amber)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.skills p{margin:8px 0}.label{color:var(--amber);font-weight:700}.highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}.metric{padding:14px;background:rgba(16,42,55,.86);border:1px solid var(--line);border-top:2px solid var(--blue)}.metric b{display:block;color:var(--amber);font-size:1.22rem}.metric span{font-size:.78rem;color:var(--muted)}
+footer{padding:16px 44px;background:#06111b;color:var(--muted);font-size:.78rem;text-align:center}
+@media(max-width:720px){header,main{padding-left:24px;padding-right:24px}.grid,.highlights{grid-template-columns:1fr}.role-head{display:block}.meta{white-space:normal}h1{font-size:2rem}}
+@media print{body{background:#fff}.resume{width:100%;margin:0;box-shadow:none}.section,.role{break-inside:avoid}a{text-decoration:none}}
+</style>
 </head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Adikar Appasaheb</h1>
-      <p>Software Developer</p>
-      <div class="contact" aria-label="Contact information">
-        <a href="mailto:your.email@example.com">your.email@example.com</a>
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/adekarappasaheb" target="_blank" rel="noreferrer">GitHub</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="container">
-    <section>
-      <h2>Profile</h2>
-      <p>
-        Welcome to my resume. I enjoy building reliable, accessible, and user-friendly
-        software. Replace this paragraph with a short summary of your experience,
-        strengths, and career goals.
-      </p>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <article>
-        <h3>Job Title — Company Name</h3>
-        <p class="meta">City, Country · Jan 2024 – Present</p>
-        <ul>
-          <li>Describe a meaningful responsibility or achievement.</li>
-          <li>Include measurable results where possible, such as performance or growth.</li>
-        </ul>
-      </article>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <article>
-        <h3><a href="#">Project Name</a></h3>
-        <p>Briefly describe what you built, the technologies used, and the problem it solves.</p>
-      </article>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-        <li>Add your skills</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <h3>Degree or Certification</h3>
-      <p class="meta">Institution Name · Graduation Year</p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">© 2026 Adikar Appasaheb</div>
-  </footer>
-</body>
-</html>
+<body><article class="resume">
+<header>
+<div class="signal-line"><span>AI-augmented delivery</span><span>People-led teams</span><span>Future-ready systems</span></div>
+<h1>Appasaheb Adekar</h1>
+<div class="headline">Engineering Manager | Technical Architecture Leader | SAP, Cloud, Integration & AI</div>
+<div class="contact">Pune, India &nbsp;|&nbsp; +91 8657744022 &nbsp;|&nbsp; <a href="mailto:adekarappasaheb@gmail.com">adekarappasaheb@gmail.com</a></div>
+<p class="summary"><strong>Engineering and architecture leader with 15+ years of experience</strong> delivering enterprise platforms and guiding teams across SAP S/4HANA, Fiori, cloud, APIs, integration, analytics and AI-enabled solutions. Combines hands-on technical depth with people leadership, stakeholder influence and disciplined delivery. Experienced in translating business priorities into target architectures, engineering standards, modernisation roadmaps and reliable product outcomes while mentoring engineers and building technical capability.</p>
+<div class="highlights">
+<div class="metric"><b>15+ years</b><span>Enterprise technology leadership</span></div>
+<div class="metric"><b>12 engineers</b><span>Team leadership experience</span></div>
+<div class="metric"><b>40+ factories</b><span>Solutions and interfaces enabled</span></div>
+<div class="metric"><b>7 design centres</b><span>Global delivery reach</span></div>
+</div>
+</header><main>
+<section class="section"><h2>Leadership Profile</h2>
+<ul>
+<li>Lead solution design across applications, integrations, data and platforms, balancing scalability, security, reliability, cost and business value.</li>
+<li>Partner with product managers, product owners, engineering managers, SAP Basis, security teams and business stakeholders to shape technical direction and resolve complex cross-team issues.</li>
+<li>Coach and mentor engineers, establish engineering practices, review designs and remove delivery impediments while encouraging accountability, innovation and continuous learning.</li>
+<li>Guide API strategy, technical standards, architecture decisions, proof-of-concept work and modernisation initiatives across SAP, SAP BTP, AWS, Azure and enterprise integration platforms.</li>
+<li>Support talent development through skill-matrix reviews, structured mentoring, knowledge sharing, technical capability communities and candidate interviewing.</li>
+</ul></section>
+<section class="section"><h2>Professional Experience</h2>
+<div class="role"><div class="role-head"><h3>Staff Software Engineer / Engineering & Architecture Lead</h3><span class="meta">2022–Present</span></div><div class="company">SD Complete Goods, John Deere | Pune, India</div><ul>
+<li>Provide technical leadership across architecture, requirements, application development, API design, security, reliability and production support for business-critical enterprise products.</li>
+<li>Shape solution options and target designs across SAP S/4HANA, Fiori/Work Zone, integrations, cloud and data, connecting business objectives with pragmatic engineering decisions.</li>
+<li>Lead cloud and SAP BTP proofs of concept, evaluate emerging technology and promote reusable patterns aligned with Clean Core and side-by-side extensibility.</li>
+<li>Drive API governance improvements through registration, documentation, observability metadata and scorecard reviews for SAP-generated and custom APIs.</li>
+<li>Coordinate Fiori and Work Zone security-role redesign, including unit-specific access, derived roles, catalogues, services and application-onboarding requirements.</li>
+<li>Mentor engineers, facilitate technical discussions, strengthen capability building and support hiring through profile review and technical interviews.</li>
+</ul></div>
+<div class="role"><div class="role-head"><h3>Senior Lead Software Engineer</h3><span class="meta">2020–2022</span></div><div class="company">SD Complete Goods, John Deere | Pune, India</div><ul>
+<li>Led technical detailing and feature design across SAP applications and integrations, improving delivery quality, security, performance and maintainability.</li>
+<li>Promoted TDD, CI/CD, engineering standards and structured peer reviews while coaching developers on complex technical decisions.</li>
+<li>Worked with cross-functional partners to prioritise technical debt, resolve production issues and align implementation with product outcomes.</li>
+</ul></div>
+<div class="role"><div class="role-head"><h3>IT Analyst / Full-Stack Developer / Scrum Master</h3><span class="meta">2016–2020</span></div><div class="company">Product Lifecycle Execution, John Deere | Moline, USA</div><ul>
+<li>Delivered solutions across SAP, Windchill, Java, integrations, analytics and reporting for complex product-lifecycle operations.</li>
+<li>Served as Scrum Master and change lead during agile transformation, improving collaboration, delivery rhythm and stakeholder visibility.</li>
+<li>Designed reporting and data flows using enterprise data sources and visual analytics to support operational decisions.</li>
+</ul></div>
+<div class="role"><div class="role-head"><h3>SAP Consultant / Technical Lead</h3><span class="meta">2014–2016</span></div><div class="company">Product Data Management, John Deere | Pune, India</div><ul>
+<li>Led PDM Release 10 application development and managed a team of 12 developers across backend and frontend delivery.</li>
+<li>Designed SAP HANA, ABAP and UI5 solutions, workflows and enhancements, translating techno-functional requirements into maintainable implementations.</li>
+<li>Provided work direction, technical reviews, mentoring and delivery coordination across the development lifecycle.</li>
+</ul></div>
+<div class="role"><div class="role-head"><h3>SAP Associate Consultant</h3><span class="meta">2012–2014</span></div><div class="company">SAP PDM Release, John Deere | Pune, India</div><ul>
+<li>Converted functional requirements into technical designs for ERP on HANA and built ABAP, Web Dynpro, FPM, ALV and integration solutions.</li>
+<li>Delivered interfaces supporting 7 design centres and more than 40 factories.</li>
+</ul></div>
+<div class="role"><div class="role-head"><h3>Graduate Engineer Trainee</h3><span class="meta">2011–2012</span></div><div class="company">John Deere | Pune, India</div><ul><li>Developed enterprise applications and technical specifications while building domain knowledge across product development and order fulfilment processes.</li></ul></div>
+</section>
+<section class="section skills"><h2>Core Skills</h2><div class="grid">
+<div><p><span class="label">Architecture:</span> Solution architecture, target-state design, architecture decision records, modernisation roadmaps, non-functional requirements, design reviews, technical governance</p><p><span class="label">Engineering Leadership:</span> Team leadership, servant leadership, mentoring, coaching, talent development, hiring, stakeholder management, agile delivery, risk and dependency management</p><p><span class="label">SAP:</span> S/4HANA, ABAP, ABAP Cloud, RAP, CDS, OData, Fiori Elements, UI5, Work Zone, SAP BTP, HANA, Workflow, Web Dynpro, FPM</p></div>
+<div><p><span class="label">Integration & APIs:</span> REST, OData, API-first design, ETags, OAuth 2.0, OpenID Connect, JWT, SAP PI/PO, CPI, API governance, observability, event-driven architecture</p><p><span class="label">Cloud & DevOps:</span> AWS, Azure, SAP BTP, GitHub, Jenkins, CI/CD, TDD, Clean Core, security and production reliability</p><p><span class="label">Data, Analytics & AI:</span> SQL, HANA SQLScript, Power BI, Tableau, data integration, enterprise analytics, AI agents, Copilot Studio, Power Platform, responsible AI concepts</p></div>
+</div></section>
+<section class="section"><h2>Selected Recognition & Innovation</h2><ul>
+<li><strong>R1 Tech Award</strong>, Digital Signature Solution, 2024</li>
+<li><strong>Star Team of the Month</strong>, performance and innovation, 2021</li>
+<li><strong>WOW Award</strong>, cross-team quality delivery, 2015</li>
+<li><strong>Global IT Innovation Award</strong>, VR Reporting Project, 2012</li>
+<li>Contributed to hackathons, technical capability building and AI-enabled approval and engineering workflow concepts.</li>
+</ul></section>
+<section class="section"><h2>Education & Additional Information</h2><div class="grid"><div><strong>Bachelor of Engineering, Mechanical Engineering</strong><br>T.K.I.E.T., 2010</div><div><strong>Languages:</strong> English, Hindi, Marathi<br><strong>Interests:</strong> Farming, travelling, cooking, volunteering and continuous learning</div></div></section>
+</main><footer>Appasaheb Adekar | Engineering Manager and Technical Architecture Leadership Resume</footer>
+</article></body></html>
